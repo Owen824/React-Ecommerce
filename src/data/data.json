@@ -1,155 +1,177 @@
 [
     {
         "name":"Converse Chuck Taylor All Star Rubber Black",
-        "brand":"converse",
+        "brand":"Converse",
         "price":5880,
+        "id":1,
         "imgName":1,
         "description":""
     },
     {
         "name":"Converse High Tops Classic",
-        "brand":"converse",
+        "brand":"Converse",
         "price":5000,
+        "id":2,
         "imgName":2,
         "description":""
     },
     {
         "name":"Converse Kids Pink High Top",
-        "brand":"converse",
+        "brand":"Converse",
         "price":4500,
+        "id":3,
         "imgName":3,
         "description":""
     },
     {
         "name":"Converse Charcoal Low Top All Star Ox",
-        "brand":"converse",
+        "brand":"Converse",
         "price":2400,
+        "id":4,
         "imgName":4,
         "description":""
     },
     {
         "name":"Converse Dc Comics Superman",
-        "brand":"converse",
+        "brand":"Converse",
         "price":12600,
+        "id":5,
         "imgName":5,
         "description":""
     },
     {
         "name":"Converse Chuck Taylor All Star Boot Pc Sand Dune",
-        "brand":"converse",
+        "brand":"Converse",
         "price":7600,
+        "id":6,
         "imgName":6,
         "description":""
     },
     {
         "name":"Converse Chuck Taylor 70 Orange",
-        "brand":"converse",
+        "brand":"Converse",
         "price":4300,
+        "id":7,
         "imgName":7,
         "description":""
     },
     {
         "name":"Converse Artist Series Tyler The Creator",
-        "brand":"converse",
+        "brand":"Converse",
         "price":6880,
+        "id":8,
         "imgName":8,
         "description":""
     },
     {
         "name":"Nike Hyperdunk X TB Kyrie Irving",
-        "brand":"nike",
+        "brand":"Nike",
         "price":7300,
+        "id":9,
         "imgName":9,
         "description":""
     },
     {
         "name":"Nike Air Zoom Pegasus 33 ID",
-        "brand":"nike",
+        "brand":"Nike",
         "price":2400,
+        "id":10,
         "imgName":10,
         "description":""
     },
     {
         "name":"Nike Air Max 2017 ID Red White Black Trainer",
-        "brand":"nike",
+        "brand":"Nike",
         "price":2880,
+        "id":11,
         "imgName":11,
         "description":""
     },
     {
         "name":"Nike Air Max 1 Ultra Flyknit ID",
-        "brand":"nike",
+        "brand":"Nike",
         "price":2650,
+        "id":12,
         "imgName":12,
         "description":""
     },
     {
         "name":"Nike Hyperdunk 2015 Women",
-        "brand":"nike",
+        "brand":"Nike",
         "price":4500,
+        "id":13,
         "imgName":13,
         "description":""
     },
     {
         "name":"Nike SB Dunk High Qs Humidity",
-        "brand":"nike",
+        "brand":"Nike",
         "price":5600,
+        "id":14,
         "imgName":14,
         "description":""
     },
     {
         "name":"Nike Lebron Soldier 10 ID",
-        "brand":"nike",
+        "brand":"Nike",
         "price":6890,
+        "id":15,
         "imgName":15,
         "description":""
     },
     {
         "name":"Adidas Superstar Black Rainbow",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":2990,
+        "id":16,
         "imgName":16,
         "description":""
     },
     {
         "name":"Adidas Campus 80s Undefeated X Bape",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":3450,
+        "id":17,
         "imgName":17,
         "description":""
     },
     {
         "name":"Adidas Dame 3 Roots Red",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":4150,
+        "id":18,
         "imgName":18,
         "description":""
     },
     {
         "name":"Adidas Pro Model Animal White",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":3880,
+        "id":19,
         "imgName":19,
         "description":""
     },
     {
         "name":"Adidas NMD R1",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":4650,
+        "id":20,
         "imgName":20,
         "description":""
     },
     {
         "name":"Adidas Ultra Boost 3.0",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":5200,
+        "id":21,
         "imgName":21,
         "description":""
     },
     {
         "name":"Adidas Original Nmd Xr1 Women",
-        "brand":"adidas",
+        "brand":"Adidas",
         "price":3980,
+        "id":22,
         "imgName":22,
         "description":""
     },
@@ -157,6 +179,7 @@
         "name":"Adidas Dragon Ball Z Golden Shenron",
         "brand":"Adidas",
         "price":9850,
+        "id":23,
         "imgName":23,
         "description":""
     }

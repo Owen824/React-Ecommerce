@@ -1,0 +1,4 @@
+.filterBar{
+    margin: 50px 20px 20px 40px;
+    width: calc( 25% - 60px);
+}

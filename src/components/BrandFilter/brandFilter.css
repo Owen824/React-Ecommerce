@@ -1,0 +1,62 @@
+.brandFilter{
+    border:2px solid #14b09b;
+    /* border-radius: 5px; */
+    font-family: sans-serif;
+}
+.brandTitle{
+    /* padding:15px; */
+}
+.brandTitle h3{
+    font-size: 20px;
+    padding:15px;
+    font-weight: 700;
+    color:#fff;
+    background-color: #14b09b;
+    /* border-bottom: 2px solid #1b2a20; */
+}
+.brandList{
+
+}
+.brand{
+
+    display: flex;
+    padding:15px 50px 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color:#14b09b;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.brand input[name="brand"]{
+    position: absolute;
+    visibility: hidden;
+}
+.brandSpan{
+    display: block;
+    position: relative;
+    width: 20px;
+    height:20px;
+    /* background-color: #4675ec; */
+    border: 2px solid #14b09b;
+    margin-right: 20px;
+    transition: .8s;
+}
+.brandSpan::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height:10px;
+    background-color: #4675ec;
+    opacity: 0;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.brand:hover .brandSpan{
+    background-color:#d5d5d5;
+}
+input[name="brand"]:checked + .brandSpan::after{
+    opacity: 1;
+}  

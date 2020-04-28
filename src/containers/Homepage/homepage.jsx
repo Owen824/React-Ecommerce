@@ -1,26 +1,25 @@
 import React from "react"
 import {connect} from "react-redux"
-import styles from "./homepage.css"
+import styles from "./homePage.css"
 import ProductList from "../../components/ProductList/productList.jsx"
 import Header from "../Header/header.jsx"
+import FilterBar from "../FilterBar/filterBar.jsx"
 
-class Homepage extends React.Component{
+class HomePage extends React.Component{
 
     
     
     render(){
-        // let reduxData= this.props.data.cartReducer.products;
-        // console.log(this.props.data.cartReducer.products);
         
-        const list=[];
-        for(let i=1;i<24;i++){
-            // list.push(<div className={styles.productbox}><img className={styles.productimg} src={`../src/assets/img/${i}.png`} alt="product"/></div>)
-            
-        }
+    
+        
         return(
-            <div className={styles.container}>
-                <Header/>
+            <div className={styles.backColor}>
+                <Header page="home"/>
+                <div className={styles.container}>
+                <FilterBar/>
                 <ProductList/>
+                </div>
             </div>
         )
     }
@@ -30,4 +29,4 @@ class Homepage extends React.Component{
 // }
 
 // export default connect(mapStateToProps)(Homepage);
-export default Homepage
+export default HomePage

@@ -4,11 +4,10 @@ import {
     INCREASE_ITEM,
     DECREASE_ITEM
 } from '../actions';
-import data from '../../public/data.json'
+import data from '../data/data.json'
 
 // console.log(Array.isArray(data));
 let initialState={
-    products:data,
     cart:[]
 };
 
@@ -16,7 +15,7 @@ let initialState={
 const cartReducer = (state=initialState, action)=>{
     switch(action.type){
         case ADD_PRODUCT_TO_CART:
-            return{}
+            return{...state,cart:[...state.cart,action.payload]}
         default:
             return state;
     }

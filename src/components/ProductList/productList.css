@@ -1,6 +1,13 @@
 .list{
     display: flex;
     flex-wrap: wrap;
-    width: 70vw;
-    margin:0 auto;
+    width: calc( 75% - 30px);
+    margin-right: 30px;
+    /* box-sizing: border-box; */
+    
+}
+@media(max-width:768px){
+    .list{
+        width: 95%;
+    }
 }

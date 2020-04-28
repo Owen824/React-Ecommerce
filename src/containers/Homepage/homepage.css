@@ -1,0 +1,10 @@
+.backColor{
+    background-color: rgba(215, 215, 215, .3);
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
