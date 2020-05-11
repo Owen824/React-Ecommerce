@@ -37,9 +37,10 @@ class ProductDetail extends React.Component {
            let product={
                name:data.name,
                id:data.id,
+               imgName:data.imgName,
                price:data.price,
                size:this.state.productSize,
-               quantity:this.state.productQuantity
+               quantity:Number(this.state.productQuantity)
            };
            this.props.addCart(product);
            
@@ -60,7 +61,7 @@ class ProductDetail extends React.Component {
                         <h3>{data.name}</h3>
                     </div>
 
-                    <div className={styles.productPrice}><span>${data.price}</span></div>
+                    <div className={styles.productPrice}><span>NT${data.price}</span></div>
                     <div className={styles.productBrand}>
                         <h4>Brand</h4>
                         <span>{data.brand}</span>
@@ -71,7 +72,7 @@ class ProductDetail extends React.Component {
                     </div>
                     <div className={styles.selectSize}>
                         <h4>Size</h4>
-                        <select name="productSize" id="productSize" value={this.state.productSize} onChange={this.changeState}>
+                        <select name="productSize" id="productSize" className={styles.selectButt} value={this.state.productSize} onChange={this.changeState}>
                             <option value="select">select</option>
                             <option value="7">7</option>
                             <option value="7.5">7.5</option>
@@ -91,7 +92,7 @@ class ProductDetail extends React.Component {
                     </div>
                     <div className={styles.selectQuantity}>
                         <h4>Quantity</h4>
-                        <select name="productQuantity" id="productQuantity" value={this.state.productQuantity} onChange={this.changeState}>
+                        <select name="productQuantity" id="productQuantity" className={styles.selectButt} value={this.state.productQuantity} onChange={this.changeState}>
                             <option value="select">select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>

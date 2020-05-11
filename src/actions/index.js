@@ -9,22 +9,22 @@ export const addProductToCart = product =>{
         payload: product
     }
 }
-export const removeProductToCart = productId =>{
+export const removeProductToCart = itemIndex =>{
     return{
         type:REMOVE_PRODUCT_TO_CART,
-        payload: productId
+        payload: itemIndex
     }
 }
-export const increaseItem = productId =>{
+export const increaseItem = itemIndex =>{
     return{
         type:INCREASE_ITEM,
-        payload: productId
+        payload: itemIndex
     }
 }
-export const decreaseItem = productId =>{
+export const decreaseItem = itemIndex =>{
     return{
         type:DECREASE_ITEM,
-        payload: productId
+        payload: itemIndex
     }
 }
 

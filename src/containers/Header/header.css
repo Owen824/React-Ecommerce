@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center; */
 }
+
 .nav{
     
     position: fixed;
@@ -17,20 +18,21 @@
     z-index: 100;
     transition: .8s;
 }
+
 .nav h3{
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 15px 0 15px 10px;
     font-weight: 900;
     color:#fff;
     letter-spacing: 5px;
     font-family: sans-serif;
     padding:7px 10px;
-    border:2px solid #fff;
-    
+    border:2px solid #fff;    
     border-radius: 5px;
-    margin:15px 0 15px 50px;
 
 }
+
 .nav .iconCart{
     width: 35px;
     color:#fff;
@@ -40,20 +42,11 @@
     border-radius: 50%;
 }
 
-@media(max-width:768px){
-    .headerwrap{
-        height:300px;
-    }
+@media(min-width:769px){
  
     .nav h3{
-        font-size: 13px;
-        line-height: 15px;
-        margin:7px 0 7px 15px;
-    }
-    .nav .iconCart{
-        width:20px;
-        padding:5px;
-        margin:7px 15px 7px 0;
-        
+        font-size: 30px;
+        line-height: 35px;
+        margin:15px 0 15px 50px;
     }
 }

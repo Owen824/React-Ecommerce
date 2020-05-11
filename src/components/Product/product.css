@@ -77,7 +77,9 @@
 
 @media(max-width:768px){
     .product{
-        flex: 0 0 calc(100% - 30px);
+        flex: 0 0 100%;
+        margin:10px 0;
+        border:2px solid rgba(5,132,242,.9);
     }
     .productTitle h3{
         font-size: 12px;

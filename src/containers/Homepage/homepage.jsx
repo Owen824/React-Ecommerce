@@ -4,14 +4,13 @@ import styles from "./homePage.css"
 import ProductList from "../../components/ProductList/productList.jsx"
 import Header from "../Header/header.jsx"
 import FilterBar from "../FilterBar/filterBar.jsx"
+import FloatCart from "../../components/FloatCart/floatCart.jsx"
+import Footer from "../Footer/footer.jsx"
+
 
 class HomePage extends React.Component{
-
-    
-    
+   
     render(){
-        
-    
         
         return(
             <div className={styles.backColor}>
@@ -19,7 +18,9 @@ class HomePage extends React.Component{
                 <div className={styles.container}>
                 <FilterBar/>
                 <ProductList/>
+                <FloatCart/>
                 </div>
+                <Footer/>
             </div>
         )
     }

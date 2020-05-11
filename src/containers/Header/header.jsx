@@ -1,6 +1,7 @@
 import React from "react"
 import { ReactSVG } from "react-svg"
 import styles from "./header.css"
+import {Link} from  "react-router-dom"
 
 class Header extends React.Component {
 
@@ -39,12 +40,23 @@ class Header extends React.Component {
     render() {
         let banner,navBar={};
         if(this.props.page==="home"){
-            banner = {
-                backgroundImage: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("../src/assets/img/banner.jpg")`,
-                height:"100vh",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
+            if(window.innerWidth>768){
+                banner = {
+                    backgroundImage: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("../src/assets/img/banner.jpg")`,
+                    height:"100vh",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                }
             }
+            else{
+                banner = {
+                    backgroundImage: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("../src/assets/img/banner.jpg")`,
+                    height:"60vh",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                }
+            }
+           
             navBar={
                 top:"20px"
             }
@@ -61,8 +73,10 @@ class Header extends React.Component {
         return (
             <div className={styles.headerwrap} style={banner}>
                 <div className={styles.nav} style={navBar}>
-                    <h3>FootAwesome</h3>
-                    <ReactSVG className={styles.iconCart} src="../src/assets/img/shopping-cart-solid.svg" />
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                         <h3>FootAwesome</h3>
+                    </Link>
+                    {/* <ReactSVG className={styles.iconCart} src="../src/assets/img/shopping-cart-solid.svg" /> */}
                 </div>
             </div>
         )

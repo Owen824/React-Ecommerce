@@ -1,0 +1,9 @@
+.container{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color:#fff;
+    font-family: sans-serif;
+    background-color: rgba(65, 105, 225, 1);
+    text-align: center;
+}

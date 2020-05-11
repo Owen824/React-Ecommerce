@@ -1,22 +1,17 @@
 .brandFilter{
+    width: 100%;
     border:2px solid #14b09b;
-    /* border-radius: 5px; */
     font-family: sans-serif;
 }
-.brandTitle{
-    /* padding:15px; */
-}
+
 .brandTitle h3{
     font-size: 20px;
     padding:15px;
     font-weight: 700;
     color:#fff;
     background-color: #14b09b;
-    /* border-bottom: 2px solid #1b2a20; */
 }
-.brandList{
 
-}
 .brand{
 
     display: flex;
@@ -29,10 +24,12 @@
     letter-spacing: 1px;
     cursor: pointer;
 }
+
 .brand input[name="brand"]{
     position: absolute;
     visibility: hidden;
 }
+
 .brandSpan{
     display: block;
     position: relative;
@@ -43,6 +40,7 @@
     margin-right: 20px;
     transition: .8s;
 }
+
 .brandSpan::after{
     content: "";
     position: absolute;
@@ -54,9 +52,11 @@
     left:50%;
     transform: translate(-50%,-50%);
 }
+
 .brand:hover .brandSpan{
     background-color:#d5d5d5;
 }
+
 input[name="brand"]:checked + .brandSpan::after{
     opacity: 1;
 }  
