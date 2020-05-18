@@ -2,14 +2,14 @@
 .cart{
     position: fixed;
     width: 94vw;
-    height:calc(100vh - 87.5px);
+    height:calc(98vh - 70px);
     background-color: rgba(5,132,242,1);
     font-family: sans-serif;
     border:1.5px solid #222;
     /* border-radius: 5px; */
     z-index: 150;
     right:-500px;
-    top:82.4px;
+    top:70px;
     opacity: 1;
     transition: .6s;
 }
@@ -132,7 +132,8 @@
 @media(min-width:769px){
     .cart{
         width: 450px;
-        height:calc(95vh - 87.5px);
+        height: 600px;
+        top:100px;
     }
     .cartButton{
         right:90px;

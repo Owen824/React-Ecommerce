@@ -8,7 +8,8 @@ class Pagination extends React.Component{
         super(props);
     }
     componentDidMount(){
-         document.querySelector(`.${styles.pageButton}[value="1"]`).classList.add(`${styles.stylePage}`);
+         document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.add(`${styles.stylePage}`);
+         console.log("hellopage");
     }
     componentDidUpdate(){
         if(this.props.currentPage===1){
@@ -20,7 +21,7 @@ class Pagination extends React.Component{
         // console.log(e.target.innerText);
         document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.remove(`${styles.stylePage}`);
         e.target.classList.add(`${styles.stylePage}`);
-
+        
         if(this.props.currentPage!==Number(e.target.innerText)){
             this.props.go_page(Number(e.target.innerText));
         }

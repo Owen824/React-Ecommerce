@@ -67,7 +67,7 @@ class Header extends React.Component {
                 top:"0px",
                 backgroundColor:"rgba(65,105,225,.9)"
             }
-            document.querySelector("body").style.backgroundColor="#ddd";
+            // document.querySelector("body").style.backgroundColor="#ddd";
         }
         
         return (
@@ -76,7 +76,9 @@ class Header extends React.Component {
                     <Link to="/" style={{ textDecoration: 'none' }}>
                          <h3>FootAwesome</h3>
                     </Link>
-                    {/* <ReactSVG className={styles.iconCart} src="../src/assets/img/shopping-cart-solid.svg" /> */}
+                    <Link to="/checkOut" >
+                    <ReactSVG className={styles.iconCheckout} src="../src/assets/img/clipboard-list-solid.svg" />
+                    </Link>
                 </div>
             </div>
         )

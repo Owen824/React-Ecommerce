@@ -2,6 +2,7 @@ import React from "react"
 import { ReactSVG } from "react-svg"
 import {connect} from "react-redux"
 import CartList from "../CartList/cartList.jsx"
+import {Link} from "react-router-dom"
 import styles from "./floatCart.css"
 
 class FloatCart extends React.Component {
@@ -45,7 +46,9 @@ class FloatCart extends React.Component {
                         <h3>subtotal:</h3>
                         <span>NT${subTotal}</span>
                     </div>
+                    <Link to="/checkOut">
                     <button className={styles.checkOutButton}>checkout</button>
+                    </Link>
                 </div>
                 <ReactSVG className={styles.iconClose} onClick={this.closeCart} src="../src/assets/img/close-solid.svg" />
             </div>

@@ -5,6 +5,7 @@ import {HashRouter,Route} from "react-router-dom"
 import rootReducer from "../../reducers/index"
 import HomePage from "../Homepage/homePage.jsx"
 import Productpage from "../ProductPage/productPage.jsx"
+import CheckOutPage from "../CheckOutPage/checkOutPage.jsx"
 
 
 const store=createStore(rootReducer);
@@ -18,6 +19,7 @@ class Main extends React.Component {
                 <HashRouter>
                             <Route exact path="/" component={HomePage}/>
                             <Route path="/product/:id" component={Productpage}/>
+                            <Route path="/checkOut" component={CheckOutPage}/>
                             
                 </HashRouter>
             </Provider>
