@@ -6,11 +6,6 @@ module.exports = {
     filename: './public/bundle.js',
     path: path.resolve(__dirname, './'),
   },
-  optimization:{
-    splitChunks:{
-      chunks: 'all',
-    }
-  },
   module: {
       rules:[
           {test: /.jsx$/, exclude: /node_modules/, use: {loader:'babel-loader',
