@@ -9,16 +9,15 @@ class Pagination extends React.Component{
     }
     componentDidMount(){
          document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.add(`${styles.stylePage}`);
-         console.log("hellopage");
     }
     componentDidUpdate(){
+        let headerHeight=89.73;
+        window.scrollTo(0,window.innerHeight-headerHeight);
         if(this.props.currentPage===1){
             document.querySelector(`.${styles.pageButton}[value="1"]`).classList.add(`${styles.stylePage}`);
         }
-
     }
     clickGoPage(e){
-        // console.log(e.target.innerText);
         document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.remove(`${styles.stylePage}`);
         e.target.classList.add(`${styles.stylePage}`);
         
@@ -42,11 +41,7 @@ class Pagination extends React.Component{
     }
 
     render(){
-        // const pre_button=;
-        // const next_button;
         let totalPages= this.props.totalPages;
-        // console.log(totalPages);
-
         let pageArray=[];
         for(let i=1; i<=totalPages; i++){
             pageArray.push(

@@ -5,34 +5,24 @@ import {Link} from  "react-router-dom"
 
 class Header extends React.Component {
 
-    
     componentDidMount(){
-        console.log("header scorll");
         if(this.props.page==="home"){
         window.addEventListener('scroll',this.handleScroll);
         }
     }
     componentWillUnmount(){
-        console.log("turn off");
         if(this.props.page==="home"){
             window.removeEventListener('scroll',this.handleScroll);
-        }  
-        
+        }     
     }
     handleScroll(event){
-        // console.log(event);
-        // console.log(window.scrollY);
-        // console.log(window.innerWidth)
-        if(window.scrollY>80){
-               
+        
+        if(window.scrollY>80){           
                 document.querySelector(`.${styles.nav}`).style.backgroundColor="rgba(65,105,225,.9)";
-                document.querySelector(`.${styles.nav}`).style.top="0px";
-                
-        }else{
-            
+                document.querySelector(`.${styles.nav}`).style.top="0px";            
+        }else{    
                 document.querySelector(`.${styles.nav}`).style.backgroundColor="transparent";
-                document.querySelector(`.${styles.nav}`).style.top="20px";
-          
+                document.querySelector(`.${styles.nav}`).style.top="20px";   
         }
     }
 
@@ -67,7 +57,6 @@ class Header extends React.Component {
                 top:"0px",
                 backgroundColor:"rgba(65,105,225,.9)"
             }
-            // document.querySelector("body").style.backgroundColor="#ddd";
         }
         
         return (

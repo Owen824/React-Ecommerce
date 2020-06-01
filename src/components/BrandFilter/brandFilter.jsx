@@ -10,13 +10,10 @@ class BrandFilter extends React.Component {
     }
 
     changeOption(event){
+        let headerHeight=89.73;
+        window.scrollTo(0,window.innerHeight-headerHeight);
         this.props.changeBrandFilter(event.target.id);
         this.props.go_page(1);
-        // console.log(document.querySelector("#All").checked);
-        // console.log(document.querySelector("#Converse").checked);
-        // console.log(document.querySelector("#Nike").checked);
-        // console.log(document.querySelector("#Adidas").checked);
-
     }
     
     render() {
