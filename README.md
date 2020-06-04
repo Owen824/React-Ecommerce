@@ -13,11 +13,11 @@ This is just a simple shoes E-commerce website with React & Redux.
 - responsive design
 
 
-![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome1.PNG)
-![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome2.PNG)
-![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome3.PNG)
-![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome4.PNG)
-![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome5.PNG)
+![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome1.PNG?raw=true)
+![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome2.PNG?raw=true)
+![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome3.PNG?raw=true)
+![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome4.PNG?raw=true)
+![footAwesomePic](https://github.com/Owen824/React-Ecommerce/tree/gh-pages/src/assets/img/footAwesome5.PNG?raw=true)
 
 ### Tools
 
