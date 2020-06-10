@@ -8,34 +8,34 @@ class Pagination extends React.Component{
         super(props);
     }
     componentDidMount(){
+        //第一次建置時，將當前頁碼加入藍色樣式
          document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.add(`${styles.stylePage}`);
     }
     componentDidUpdate(){
         let headerHeight=89.73;
+        //當頁面更新時，視窗會自動移到產品列表上
         window.scrollTo(0,window.innerHeight-headerHeight);
-        if(this.props.currentPage===1){
-            document.querySelector(`.${styles.pageButton}[value="1"]`).classList.add(`${styles.stylePage}`);
-        }
+        //當brandfilter有切換品牌或頁碼切換時，將當前頁碼加入藍色樣式
+        document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.add(`${styles.stylePage}`);
     }
     clickGoPage(e){
-        document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.remove(`${styles.stylePage}`);
-        e.target.classList.add(`${styles.stylePage}`);
-        
+        //當前頁碼跟點擊的頁碼不同時，將原本的頁碼移除藍色樣式 
         if(this.props.currentPage!==Number(e.target.innerText)){
+            document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.remove(`${styles.stylePage}`);
             this.props.go_page(Number(e.target.innerText));
         }
     }
     clickNextPage(){
+        //點擊下一頁時，如果當前頁碼不是最後一頁就將原本的頁碼移除藍色樣式，之後執行next_page()將redux裡的state做調整
         if(this.props.currentPage!==this.props.totalPages){
             document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.remove(`${styles.stylePage}`);
-            document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage+1}"]`).classList.add(`${styles.stylePage}`);
             this.props.next_page();
         }
     }
     clickPrevPage(){
+        //點擊上一頁時，如果當前頁碼不是第一頁就將原本的頁碼移除藍色樣式，之後執行prev_page()將redux裡的state做調整
         if(this.props.currentPage!==1){
             document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage}"]`).classList.remove(`${styles.stylePage}`);
-            document.querySelector(`.${styles.pageButton}[value="${this.props.currentPage-1}"]`).classList.add(`${styles.stylePage}`);
             this.props.prev_page();
         }
     }

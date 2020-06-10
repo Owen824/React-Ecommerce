@@ -16,16 +16,15 @@ class BrandFilter extends React.Component {
         this.props.go_page(1);
     }
     
-    render() {
+    render(){
         const brands = this.props.brands;
         const brandList = brands.map((brand,key) => {
             return (
                 <label className={styles.brand} key={key}>
+                    {/* 顯示目前所有品牌(數量) */}
                     {brand}({this.props.brandItemCount[brand]})
-                    {/* <input type="checkbox" name={brand} /> */}
-                    <input type="radio" name="brand" id={brand} checked={this.props.brandOption===brand} onChange={this.changeOption.bind(this)}/>
+                    <input type="radio" name="brand" id={brand} checked={this.props.brandOption===brand} onChange={this.changeOption}/>
                     <span className={styles.brandSpan}></span>
-
                 </label>
             )
         })
@@ -36,7 +35,7 @@ class BrandFilter extends React.Component {
                 </div>
                 <div className={styles.brandList}>
                     <label className={styles.brand}>All({this.props.itemTotal})
-                    <input type="radio" name="brand" id="All" checked={this.props.brandOption==="All"} onChange={this.changeOption.bind(this)} />
+                    <input type="radio" name="brand" id="All" checked={this.props.brandOption==="All"} onChange={this.changeOption} />
                         <span className={styles.brandSpan}></span>
                     </label>
                     {brandList}
@@ -54,6 +53,7 @@ const mapDispatchToProps = (dispatch) =>{
 const mapStateToProps = (state) => {
     const brandItemCount={};
     state.productReducer.products.forEach(element => {
+        //在所有產品之中，紀錄brandItemCount物件裡每個品牌的各自數量
         brandItemCount[element.brand]=brandItemCount[element.brand]+1||1;
     });
     return {
