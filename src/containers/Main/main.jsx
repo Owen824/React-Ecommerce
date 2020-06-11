@@ -9,7 +9,7 @@ import CheckOutPage from "../CheckOutPage/checkOutPage.jsx"
 
 
 const store=createStore(rootReducer);
-store.subscribe(()=>{console.log('store 變動')})
+// store.subscribe(()=>{console.log('store 變動')})
 
 class Main extends React.Component {
     render(){

@@ -20,6 +20,7 @@ class CheckOutList extends React.Component {
     render() {
         let shippingList;
         let total = 0;
+        //判斷購物清單是否為空的，空的shippinglist顯示 no item。
         if (this.props.list.length == 0) {
             shippingList = <div className={styles.emptyList}>There is no item in the shipping cart.</div>;
         } else {
@@ -81,9 +82,6 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 const mapStateToProps = (state) => {
-
-    console.log(state);
-
     return {
 
         list: state.cartReducer.cart

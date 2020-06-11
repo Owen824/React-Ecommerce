@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./product.css"
 import {Link} from "react-router-dom"
 const Product =(props)=>{
-        
+    
     return(
         <div className={styles.product}>
             {/* {props.product.name} */}
