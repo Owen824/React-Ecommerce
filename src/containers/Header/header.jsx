@@ -16,7 +16,7 @@ class Header extends React.Component {
         }     
     }
     handleScroll(event){
-        
+        //當滑超過80，就設定背景色和位置
         if(window.scrollY>80){           
                 document.querySelector(`.${styles.nav}`).style.backgroundColor="rgba(65,105,225,.9)";
                 document.querySelector(`.${styles.nav}`).style.top="0px";            
@@ -30,6 +30,7 @@ class Header extends React.Component {
     render() {
         let banner,navBar={};
         if(this.props.page==="home"){
+            //判斷視窗寬度 分成電腦跟手機的css樣式
             if(window.innerWidth>768){
                 banner = {
                     backgroundImage: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("../src/assets/img/banner.jpg")`,

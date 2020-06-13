@@ -14,6 +14,7 @@ class HomePage extends React.Component{
         
         return(
             <div className={styles.backColor}>
+                {/* header page="home" 要讓header以home的css樣式表示 */}
                 <Header page="home"/>
                 <div className={styles.container}>
                 <FilterBar/>

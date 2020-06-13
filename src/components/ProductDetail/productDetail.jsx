@@ -17,11 +17,8 @@ class ProductDetail extends React.Component {
     }
     changeState(e){
         let changeName= event.target.name;
+        // 主要想知道select 是 size 還是 quantity，state值剛好對應到每個組件的name屬性，[]是為了讓js知道那是變數
         this.setState({[changeName]:event.target.value});
-    }
-    componentDidUpdate(){
-        console.log(this.state.productSize)
-        console.log(this.state.productQuantity)
     }
     handleAddCart(data){
         if(this.state.productSize==="select"&&this.state.productQuantity==="select"){
@@ -48,8 +45,6 @@ class ProductDetail extends React.Component {
     }
 
     render() {
-        console.log(this.props.productId);
-        console.log(this.props.data);
         const data = this.props.data.find((product) => product.id == this.props.productId);
         return (
             <div className={styles.productDetailBox}>
@@ -126,7 +121,6 @@ const mapDispatchToProps =(dispatch)=>{
 }
 const mapStateToProps = (state) => {
     const productList = state.productReducer.products;
-    console.log(state);
     return {
         data: productList
     }

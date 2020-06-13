@@ -17,7 +17,6 @@ class FloatCart extends React.Component {
         
     }
     closeCart(){
-        // document.querySelector(`.${styles.cart}`).style.opacity="0";
         document.querySelector(`.${styles.cart}`).style.right="-500px";
         document.querySelector(`.${styles.cartButton}`).style.opacity="1";
     }
@@ -28,7 +27,7 @@ class FloatCart extends React.Component {
         })
         const cartList = this.props.cartList.map((item,index)=>{
             return(
-                <CartList item={item} dataIndex={index} />
+                <CartList item={item} dataIndex={index} key={index}/>
             )
         })
         return (

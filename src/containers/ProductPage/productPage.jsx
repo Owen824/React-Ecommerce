@@ -11,7 +11,7 @@ class ProductPage extends React.Component{
     }
 
     render(){
-        console.log(this.props.match.params.id);
+        //得知產品id
         const productId=this.props.match.params.id;
     
         return(

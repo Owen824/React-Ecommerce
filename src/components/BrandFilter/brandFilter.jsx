@@ -13,6 +13,7 @@ class BrandFilter extends React.Component {
         let headerHeight=89.73;
         window.scrollTo(0,window.innerHeight-headerHeight);
         this.props.changeBrandFilter(event.target.id);
+        //當換品牌時，將當前頁碼設為1
         this.props.go_page(1);
     }
     

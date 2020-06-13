@@ -28,7 +28,7 @@ class CheckOutList extends React.Component {
             shippingList = this.props.list.map((item, dataIndex) => {
                 total += (item.quantity * item.price);
                 return (
-                    <div className={styles.shippingItem}>
+                    <div className={styles.shippingItem} key={dataIndex}>
                         <div className={styles.shippingImg}>
                             <img src={`../src/assets/img/${item.imgName}.png`} alt="product" />
                         </div>
